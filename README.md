@@ -4,7 +4,7 @@
 - made using (JavaFX, JWT and Swing)
 
 ### Why JavaPad ?
-- JavaPad is very Light and can run smoothly even in old laptops.
+- JavaPad is very Light and can run smoothly even in older laptops.
 - Has built in auto-completions for JAVA.
 - AutoSave and recover features.
 - (Most of our university laptops used to have Auto-shutdown issue. So the unsaved data used to get lost. So we made this text editor to solve the issue.)
