@@ -1,7 +1,7 @@
 ## JavaPad
 - A Light-weight java-based text-editor with auto-completions for writing java code.
 - It has autosave and recover features to restore the unsaved lost data.
-- made using (JavaFX, JWT and Swing)
+- made using (JavaFX, awt and Swing)
 
 ### Why JavaPad ?
 - JavaPad is very Light and can run smoothly even in older laptops.
