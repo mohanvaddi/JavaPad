@@ -1,12 +1,9 @@
-//package p1;
-
 // import java.io.*;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
-/******************************************************/
 class FontDemo extends JFrame {
 	FontChooser dialog = null;
 	JTextArea ta;
@@ -41,14 +38,13 @@ class FontDemo extends JFrame {
 		setVisible(true);
 	}
 
-	////////////////////////////////
+
 	public static void main(String[] args) {
 		new FontDemo();
 	}
 
 }
 
-/******************************************************/
 public class FontChooser extends JPanel // implements ActionListener
 {
 	private Font thisFont;
@@ -65,7 +61,7 @@ public class FontChooser extends JPanel // implements ActionListener
 	public FontChooser(Font withFont) {
 		thisFont = withFont;
 
-		////////////////////
+
 		String[] fontNames = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
 		jFace = new JList(fontNames);
 		jFace.setSelectedIndex(0);
@@ -188,7 +184,7 @@ public class FontChooser extends JPanel // implements ActionListener
 
 	}
 
-	//////////////////////////////////
+
 	public boolean showDialog(Component parent, String title) {
 		ok = false;
 
@@ -209,5 +205,5 @@ public class FontChooser extends JPanel // implements ActionListener
 		// System.out.println(dialog.getWidth()+" "+dialog.getHeight());
 		return ok;
 	}
-	//////////////////////////////
+
 }

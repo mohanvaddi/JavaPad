@@ -5,7 +5,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.border.*;
-/******************************************************/
+
 class FindReplaceDemo extends JFrame
 {
 FindDialog dialog=null; 
@@ -57,14 +57,14 @@ ta.append("\n Hello is no hello but it is Hello");
 ta.setCaretPosition(0);
 setVisible(true);
 }
-////////////////////////////////
+
 public static void main(String[] args)
 {
 new FindReplaceDemo();
 }
 
 }
-/******************************************************/
+
 public class FindDialog extends JPanel implements ActionListener
 {
 JTextArea jta;
@@ -85,7 +85,7 @@ CardLayout card;
 
 private boolean ok;
 private JDialog dialog;
-///////////////////////
+
 public FindDialog(JTextArea jta)
 {
 
@@ -177,7 +177,7 @@ findWhat.addTextListener(
 	new TextListener(){public void textValueChanged(TextEvent te){enableDisableButtons();}});
 
 }
-//////////////////////////
+
 void enableDisableButtons()
 {
 if(findWhat.getText().length()==0)
@@ -193,7 +193,7 @@ replaceButton.setEnabled(true);
 replaceAllButton.setEnabled(true);
 }
 }
-///////////////////////////////////
+
 public void actionPerformed(ActionEvent ev)
 {
 
@@ -205,7 +205,7 @@ else if(ev.getSource()==replaceAllButton)
 	JOptionPane.showMessageDialog(null,"Total replacements made= "+replaceAllNext());
 
 }
-/////////////////////////
+
 int findNext()
 {
 
@@ -243,7 +243,7 @@ else
 
 return lastIndex;
 }
-///////////////////////////////////////////////
+
 public void findNextWithSelection()
 {
 int idx=findNext();
@@ -257,7 +257,7 @@ else
 	"Cannot find"+" \""+findWhat.getText()+"\"",
 	"Find",JOptionPane.INFORMATION_MESSAGE);
 }
-//////////////////////////////////////////////
+
 void replaceNext()
 {
 // if nothing is selectd
@@ -278,7 +278,7 @@ if(
 
 findNextWithSelection();
 }
-//////////////////////////////////////////////
+
 int replaceAllNext()
 {
 if(up.isSelected())
@@ -298,7 +298,7 @@ jta.replaceRange(replaceWith.getText(),idx,idx+findWhat.getText().length());
 
 return counter;
 }
-//////////////////////////////////////////////
+
 public boolean showDialog(Component parent, boolean isFind )
 {
 
@@ -347,5 +347,5 @@ dialog.setVisible(true);
 //System.out.println(dialog.getWidth()+" "+dialog.getHeight());
 return ok;
 }
-//////////////////////////////
+
 }
