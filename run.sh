@@ -1,2 +1,2 @@
 #!/usr/bin/zsh
-java -jar Notepad.jar
+java -jar ./JavaPad.jar --enable-preview
